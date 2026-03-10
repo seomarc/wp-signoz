@@ -1,0 +1,39 @@
+{
+    "name": "searchops/wp-signoz",
+    "description": "WordPress plugin for SigNoz integration — full observability with traces, metrics and logs via OpenTelemetry.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "SearchOps",
+            "homepage": "https://searchops.io/"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "open-telemetry/opentelemetry": "^1.0",
+        "open-telemetry/exporter-otlp": "^1.0",
+        "open-telemetry/transport-grpc": "^1.0",
+        "open-telemetry/sdk": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "wp-coding-standards/wpcs": "^3.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+    },
+    "autoload": {
+        "classmap": [
+            "includes/",
+            "admin/"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": "phpcs --standard=WordPress ."
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

@@ -1,0 +1,134 @@
+/**
+ * WP SigNoz — Admin Styles
+ *
+ * @package WP_SigNoz
+ */
+
+.wp-signoz-settings {
+	max-width: 900px;
+}
+
+.wp-signoz-settings h1 {
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+/* Header banner */
+.signoz-header-banner {
+	background: linear-gradient(135deg, #f56a00 0%, #e8451e 100%);
+	color: #fff;
+	padding: 16px 24px;
+	border-radius: 6px;
+	margin-bottom: 24px;
+}
+
+.signoz-header-banner p {
+	margin: 4px 0;
+	font-size: 14px;
+}
+
+.signoz-header-banner a {
+	color: #fff;
+	text-decoration: underline;
+	font-weight: 600;
+}
+
+.signoz-header-banner .signoz-author {
+	font-size: 12px;
+	opacity: 0.85;
+}
+
+/* Form sections */
+.wp-signoz-settings .form-table th {
+	width: 200px;
+	padding-left: 0;
+}
+
+.wp-signoz-settings .form-table td input[type="text"],
+.wp-signoz-settings .form-table td input[type="url"],
+.wp-signoz-settings .form-table td input[type="password"],
+.wp-signoz-settings .form-table td input[type="number"] {
+	width: 100%;
+	max-width: 500px;
+}
+
+.wp-signoz-settings .form-table td input:disabled {
+	background-color: #f0f0f1;
+	opacity: 0.7;
+}
+
+/* Actions row */
+.signoz-actions {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	margin: 24px 0;
+}
+
+.signoz-actions .button-secondary .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	line-height: 1;
+}
+
+/* Test result notice */
+#signoz-test-result {
+	margin: 16px 0;
+	max-width: 600px;
+}
+
+#signoz-test-result.notice-success {
+	border-left-color: #00a32a;
+}
+
+#signoz-test-result.notice-error {
+	border-left-color: #d63638;
+}
+
+/* Info cards */
+.signoz-info-cards {
+	display: flex;
+	gap: 20px;
+	margin-top: 32px;
+	flex-wrap: wrap;
+}
+
+.signoz-card {
+	flex: 1;
+	min-width: 280px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 16px 20px;
+}
+
+.signoz-card h3 {
+	margin-top: 0;
+	font-size: 14px;
+	border-bottom: 1px solid #f0f0f1;
+	padding-bottom: 8px;
+}
+
+.signoz-card code {
+	display: block;
+	background: #f6f7f7;
+	padding: 10px 12px;
+	font-size: 12px;
+	line-height: 1.6;
+	border-radius: 3px;
+	word-break: break-all;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+	.signoz-info-cards {
+		flex-direction: column;
+	}
+
+	.signoz-actions {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}

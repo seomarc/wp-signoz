@@ -1,0 +1,37 @@
+# Composer dependencies
+/vendor/
+composer.lock
+
+# WordPress
+*.log
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testes
+/tests/coverage/
+.phpunit.result.cache
+
+# Node (se usar no futuro)
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Outros
+*.zip
+*.tar.gz
+.env
+.env.local
